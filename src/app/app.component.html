@@ -1,0 +1,14 @@
+<div class="markq">
+    <div id="markchild1" onclick="animar(this)" (click)="reproducirNota()"></div>
+    <div id="markchild2" onclick="animar(this)" (click)="reproducirNota()"></div>
+    <div id="markchild3" onclick="animar(this)" (click)="reproducirNota()"></div>
+    <div id="markchild4">
+        <span (click)="menu()">
+            <div id="childmid1" onclick="movePage(document.getElementById('ayuda'),2)"></div>
+        </span>
+        <span (click)="agregar()">
+            <div id="childmid2" onclick="movePage(document.getElementById('ayuda'),2)"></div>
+        </span>
+    </div>
+</div>
+<router-outlet></router-outlet>

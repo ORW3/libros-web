@@ -1,0 +1,72 @@
+/*Marcador*/
+.markq {
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  width: auto;
+  height: auto;
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+#markchild1 {
+  background-color: #38d3ff;
+  width: 70px;
+  height: 70px;
+}
+
+#markchild2 {
+  background-color: #fff038;
+  width: 70px;
+  height: 70px;
+}
+
+#markchild3 {
+  background-color: #ff3877;
+  width: 70px;
+  height: 70px;
+}
+
+#markchild4 {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+}
+
+#childmid1 {
+  width: 35px;
+  height: 70px;
+  background-color: #5c7880;
+}
+
+#childmid2 {
+  width: 35px;
+  height: 70px;
+  background-color: #aa5e76;
+}
+
+.tecla{
+  animation: barra .4s linear;
+}
+
+@keyframes barra {
+  0%{
+    transform: scaleX(1);
+  }
+  25%{
+    transform: scaleX(2);
+  }
+  50%{
+    transform: scaleX(5);
+  }
+  75%{
+    transform: scaleX(2);
+  }
+  100%{
+    transform: scaleX(1);
+  }
+}

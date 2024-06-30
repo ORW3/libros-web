@@ -1,0 +1,42 @@
+<div id="flower-container">
+  <div class="bookc">
+    <div class="page cover-front no-select" onclick="movePage(this,1)">
+      <h1>Lista de Libros</h1>
+      <div class="icono">
+        <img src="/assets/images/flowericon.png" height="80">
+      </div>
+      <h2>Pasar página</h2>
+    </div>
+    <div class="page cover-front" id="ayuda" onclick="movePage(this,2)"></div>
+    <div class="page overflow no-select">
+      <div *ngFor="let libro of libros; let i = index">
+        <h1>{{ libro.nombre }}</h1>
+        <p>{{ libro.autor }}</p>
+        <p>{{ libro.genero }}</p>
+        <p>{{ formatDate(libro.fecha) }}</p>
+        <span (click)="eliminarLibro(libro, i)"><button class="btn btn-outline-danger btn-sm">Eliminar</button></span>
+        <span onclick="movePage(document.getElementById('ayuda'),2)" [routerLink]="['/editar-libro/',libro._id]"><button class="btn btn-outline-secondary btn-sm ms-3">Editar</button></span>
+        <br>
+        <br>
+      </div>
+    </div>
+    <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+  </div>
+  <span id="circle" class="circle"></span>
+</div>
